@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import time
 five_mins = time.time() + 60*5
 timeout = time.time() + 5
