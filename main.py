@@ -1,6 +1,7 @@
 from selenium import webdriver
 import time
-five_mins = time.time() + 60*5
+
+five_mins = time.time() + 60 * 5
 timeout = time.time() + 5
 
 chrome_driver_path = "D://Applications/chromedriver_win32/chromedriver.exe"
@@ -34,7 +35,6 @@ while True:
         for n in range(len(item_prices)):
             cookie_upgrades[item_prices[n]] = item_ids[n]
 
-
         # Get current cookie count
         money_element = driver.find_element_by_id("money").text
         if "," in money_element:
@@ -63,3 +63,4 @@ while True:
         cookie_per_s = driver.find_element_by_id("cps").text
         print(cookie_per_s)
         break
+
